@@ -1,0 +1,26 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program44
+    {
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.Write("Мячи команды А: ");
+            if (!int.TryParse(Console.ReadLine(), out int a)) { Console.WriteLine("Ошибка."); return; }
+            Console.Write("Мячи команды Б: ");
+            if (!int.TryParse(Console.ReadLine(), out int b)) { Console.WriteLine("Ошибка."); return; }
+
+            if (a > b)
+                Console.WriteLine("Победила команда А");
+            else if (b > a)
+                Console.WriteLine("Победила команда Б");
+            else
+                Console.WriteLine("Ничья");
+        }
+    }
+    }
